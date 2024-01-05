@@ -16,7 +16,7 @@ let header;
 
     heading = domMani.myCreateElement(heading, 'h1');
     heading.className = "heading";
-    heading.textContent = "Cake House"
+    heading.textContent = "Dessert Place"
 
     logo.appendChild(heading);
     header.appendChild(logo);
@@ -43,7 +43,7 @@ let header;
     tab.appendChild(menu);
 
     contact = domMani.myCreateElement(contact, 'div');
-    contact.className = "home";
+    contact.className = "contact";
     
     let contactText;
     contactText = domMani.myCreateElement(contactText, "h3");

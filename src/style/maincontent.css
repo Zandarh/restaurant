@@ -1,11 +1,15 @@
 div#content > div.main-content{
     grid-area: 2/1/2/2;
-    background-color: pink;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 20px;
 }
 div.main-content > .hero-div{
+    height: 150px;
     width: 100%;
-    height: 40%;
     background-image: url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
@@ -15,7 +19,7 @@ div.main-content > .hero-div{
     align-items: center;
 }
 div.main-content > .overlay{
-    height: 40%;
+    height: 150px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
     position: absolute;
@@ -25,8 +29,63 @@ div.main-content > .overlay{
 }
 div.hero-div > .hero-heading{
     z-index: 11;
-    color: #ffb80e;
+    color: #ffff;
     font-size: 1.5rem;
     text-align: center;
     font-weight: 900;
+}
+div.main-content .about{
+    width: 70%;
+    border: 2px solid #982121;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px grey;
+    padding: 20px;
+}
+div.main-content > .main-headings{
+    color: #982121;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+.about > p{
+    text-align: center;
+}
+div.main-content > .service-div{
+    width: 70%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/service1.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #982121;
+    border-radius: 10px;
+}
+div.main-content > .service-div2{
+    width: 70%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/service2.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #982121;
+    border-radius: 10px;
+}
+div.main-content > .service-div3{
+    width: 70%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../img/service-3.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    border-radius: 10px;
 }

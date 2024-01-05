@@ -1,9 +1,13 @@
 div#content > div.footer{
-    grid-area: 3/1/3/2;
+    /* grid-area: 3/1/3/2; */
     background-color: #982121;
     display: flex;
     justify-content: center;
     align-items: center;
+    /* position: fixed; */
+    bottom: 0;
+    width: 100%;
+    height: 40px;
 }
 div.footer  > a{
     text-decoration: none;
@@ -11,4 +15,7 @@ div.footer  > a{
 div.footer  > p,
 div.footer  > a{
     color: var(--text-color);
+}
+div.footer  > a:hover{
+    color: #ffb80e;
 }
