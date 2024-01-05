@@ -21,8 +21,7 @@ export default function domManipulation(){
     content.appendChild(header);
     content.appendChild(mainContent)
     content.appendChild(footer);
-    content.appendChild(menu);
-    content.appendChild(contact);
+    
 })();
 
 
@@ -41,22 +40,31 @@ export default function domManipulation(){
 
     function toggleTabs(e){
         if(e.target.textContent == "Home"){
-            menu.style.display = "none";
-            contact.style.display = "none"
-            mainContent.style.display = "flex";
+            removeAllChildren(content);
+            content.appendChild(header);
+            content.appendChild(mainContent);
+            content.appendChild(footer);
             return;
         }
         if(e.target.textContent == "Menu"){
-            mainContent.style.display = "none";
-            contact.style.display = "none"
-            menu.style.display = "flex";
+            removeAllChildren(content);
+            content.appendChild(header);
+            content.appendChild(menu);
+            content.appendChild(footer);
             return;
         }
         else{
-            mainContent.style.display = "none";
-            menu.style.display = "none"
-            contact.style.display = "flex";
+            removeAllChildren(content);
+            content.appendChild(header);
+            content.appendChild(contact);
+            content.appendChild(footer);
             return;
+        }
+    }
+
+    function removeAllChildren(node){
+        while(node.firstChild){
+            node.removeChild(node.lastChild);
         }
     }
 })();
