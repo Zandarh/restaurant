@@ -6,18 +6,22 @@ div#content > div.header{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 10px;
     gap: 25px;
+    position: sticky;
+    top: 0;
+    z-index: 12;
+    padding-top: 10px;
+    width: 100%;
+
 }
-div.header > .logo-div > .heading{
-    color: #ffff;
+div.header > .logo-div > .headingLogo{
+    width: 100px;
 }
 div.header > .tab{
     display: flex;
     width: 60%;
     justify-content: center;
     gap: 25px;
-    margin-top: auto;
 }
 .home,
 .menu,
@@ -34,6 +38,5 @@ div.header > .tab{
 .menu > h3:hover,
 .contact > h3:hover{
     color: var(--text-color);
-    /* text-decoration: underline; */
     border-bottom: 1px solid #ffb80e;
 }

@@ -1,5 +1,7 @@
 import './style/header.css';
 import domManipulation from "./index.js";
+import myLogo from './img/logo.png';
+
 let header;
 (function(){
     const domMani = domManipulation();
@@ -14,9 +16,9 @@ let header;
     logo = domMani.myCreateElement(logo, 'div');
     logo.className = "logo-div";
 
-    heading = domMani.myCreateElement(heading, 'h1');
-    heading.className = "heading";
-    heading.textContent = "Dessert Place"
+    heading = new Image();
+    heading.src = myLogo;
+    heading.className = "headingLogo";
 
     logo.appendChild(heading);
     header.appendChild(logo);

@@ -24,8 +24,10 @@ let mainContent;
     mainContent.appendChild(heroOverlay);
     mainContent.appendChild(heroDiv);
 
-    let aboutDiv, aboutText, paraText, aboutHeading, serviceHeading;
+    let aboutWrapper, aboutDiv, aboutText, paraText, aboutHeading, serviceHeading;
 
+    aboutWrapper = domMani.myCreateElement(aboutWrapper, "div");
+    aboutWrapper.className = "about-wrapper"
     //About us
     aboutDiv = domMani.myCreateElement(aboutDiv, "div");
     aboutDiv.className = "about";
@@ -37,13 +39,14 @@ let mainContent;
 
     //about us text
     aboutText = domMani.myCreateElement(aboutText, "p");
-    paraText = `Welcome to Dessert Place, where each treat is a symphony of flavor. 
+    paraText = `Welcome to Palate Craft, where each treat is a symphony of flavor. 
      Our creations turn every occasion into a sweet celebration. 
-     Experience joy in every bite—indulge in the delight of Dessert Place!`
-     
+     Experience joy in every bite—indulge in the delight of Palate Craft!`
+
     aboutText.textContent = paraText;
     aboutDiv.appendChild(aboutText);
     mainContent.appendChild(aboutDiv);
+    
 
     //services
     serviceHeading = domMani.myCreateElement(serviceHeading, 'h2');
@@ -57,15 +60,16 @@ let mainContent;
     div1 = domMani.myCreateElement(div1, "div");
     div1.className = "service-div";
   
-    mainContent.appendChild(div1);
+    aboutWrapper.appendChild(div1);
 
     div2 = domMani.myCreateElement(div2, "div");
     div2.className = "service-div2";
-    mainContent.appendChild(div2);
+    aboutWrapper.appendChild(div2);
 
     div3 = domMani.myCreateElement(div3, "div");
    div3.className = "service-div3";
-   mainContent.appendChild(div3);
+   aboutWrapper.appendChild(div3);
+   mainContent.appendChild(aboutWrapper);
     
 
     

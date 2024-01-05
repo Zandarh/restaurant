@@ -4,24 +4,27 @@ div#content > div.main-content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 40px;
     margin-bottom: 20px;
-}
+    width: 100%;
+ }
 div.main-content > .hero-div{
-    height: 150px;
+    height: 200px;
     width: 100%;
     background-image: url(../img/hero-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 5px;
 }
 div.main-content > .overlay{
-    height: 150px;
+    height: 200px;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(0, 0, 0, 0.3);
     position: absolute;
     top: 0;
     left: 0;
@@ -33,6 +36,19 @@ div.hero-div > .hero-heading{
     font-size: 1.5rem;
     text-align: center;
     font-weight: 900;
+}
+div.hero-div > p{
+    z-index: 11;
+    color: #fff;
+    text-align: center;
+}
+div.main-content .about-wrapper{
+    padding: 10px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    justify-items: center;
+    gap: 20px;
 }
 div.main-content .about{
     width: 70%;
@@ -49,8 +65,8 @@ div.main-content > .main-headings{
 }
 .about > p{
     text-align: center;
-}
-div.main-content > .service-div{
+} 
+div.about-wrapper > .service-div{
     width: 70%;
     height: 200px;
     background-repeat: no-repeat;
@@ -63,7 +79,7 @@ div.main-content > .service-div{
     border: 2px solid #982121;
     border-radius: 10px;
 }
-div.main-content > .service-div2{
+div.about-wrapper > .service-div2{
     width: 70%;
     height: 200px;
     background-repeat: no-repeat;
@@ -76,7 +92,7 @@ div.main-content > .service-div2{
     border: 2px solid #982121;
     border-radius: 10px;
 }
-div.main-content > .service-div3{
+div.about-wrapper > .service-div3{
     width: 70%;
     height: 200px;
     background-repeat: no-repeat;

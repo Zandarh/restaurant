@@ -1,3 +1,12 @@
 div.menu > .hero-div{
     background-image: url(../img/menu-bg.jpg);
 }
+div.menu > div.about-wrapper > .service-div{
+    background-image: url(../img/menu1.jpg);
+}
+div.menu > div.about-wrapper > .service-div2{
+    background-image: url(../img/menu2.jpg);
+}
+div.menu > div.about-wrapper > .service-div3{
+    background-image: url(../img/menu3.jpg);
+}

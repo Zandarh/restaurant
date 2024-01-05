@@ -12,7 +12,7 @@ let footer;
     let footerText, footerLink, link;
 
     footerText = domMani.myCreateElement(footerText, "p");
-    const text = `Copyright ${new Date().getFullYear()} .`;
+    const text = `Copyright © ${new Date().getFullYear()} .`;
     footerText.textContent = text;
     footer.appendChild(footerText);
 
