@@ -1,0 +1,31 @@
+
+div#content > div.header{
+    grid-area: 1/1/1/2;
+    background-color: #982121;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+}
+div.header > .logo-div > .heading{
+    color: #ffb80e;
+}
+div.header > .tab{
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    gap: 25px;
+    margin-top: auto;
+}
+.home,
+.menu,
+.contact{
+    cursor: pointer;
+}
+.home > h3,
+.menu > h3,
+.contact > h3{
+    text-align: center;
+    color: var(--text-color);
+}
