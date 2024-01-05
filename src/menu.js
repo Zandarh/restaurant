@@ -1,6 +1,6 @@
 import domManipulation from "./index.js";
-import './style/menu.css';
 import './style/maincontent.css';
+import './style/menu.css';
 const domMani = domManipulation();
 let menu;
 
@@ -21,7 +21,7 @@ let menu;
 
     heroHeading = domMani.myCreateElement(heroHeading, "h2");
     heroHeading.className = "hero-heading";
-    heroHeading.textContent = "Who Says You Cannot Satisfy Those Cravings?"
+    heroHeading.textContent = "Cravings are Best Shared With Pals"
 
     heroDiv.appendChild(heroHeading);
     menu.appendChild(heroOverlay);
